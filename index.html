@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Photo Gallery</title>
+</head>
+<body>
+    
+    <nav>
+        <h1>Photo Gallery</h1>
+    </nav>
+
+    <div class="Hero-Section">
+        <h2>Welcome to My Image Gallery</h2>
+    </div>
+
+    <main>
+        <div class="photo-container">
+            <div class="individual-image">
+                <img class="images"  src="images/Image1.jpg" alt="" onclick="sliderNum(1)">
+            </div>
+            <div class="individual-image">
+                <img class="images" src="images/Image2.jpg" alt="" onclick="sliderNum(2)">
+            </div>
+            <div class="individual-image">
+                <img class="images" src="images/Image3.jpg" alt="" onclick="sliderNum(3)">
+            </div>
+            <div class="individual-image">
+                <img class="images" src="images/Image4.jpg" alt="" onclick="sliderNum(4)">
+            </div>
+            <div class="individual-image">
+                <img class="images" src="images/Image5.jpg" alt="" onclick="sliderNum(5)">
+            </div>
+            <div class="individual-image">
+                <img class="images" src="images/Image6.jpg" alt="" onclick="sliderNum(6)">
+            </div>
+            <div class="individual-image">
+                <img class="images" src="images/Image7.jpg" alt="" onclick="sliderNum(7)">
+            </div>
+            <div class="individual-image">
+                <img class="images" src="images/Image8.jpg" alt="" onclick="sliderNum(8)">
+            </div>
+        </div>
+    </main>
+
+    <div class="modal" id="image-slider">
+        <button id="closeButton">&times</button>
+
+        <div class="mainslider">
+            <button id="previous-btn" onclick="plusSlides(-1)">&#10094</button>
+            <div class="mainslider-imagecontainer">
+                <div><img src="images/Image1.jpg" alt=""></div>
+                <div><img src="images/Image2.jpg" alt=""></div>
+                <div><img src="images/Image3.jpg" alt=""></div>
+                <div><img src="images/Image4.jpg" alt=""></div>
+                <div><img src="images/Image5.jpg" alt=""></div>
+                <div><img src="images/Image6.jpg" alt=""></div>
+                <div><img src="images/Image7.jpg" alt=""></div>
+                <div><img src="images/Image8.jpg" alt=""></div>
+            </div>
+            <button id="next-btn" onclick="plusSlides(1)">&#10095</button> 
+        </div>
+    </div>
+
+
+    
+    <footer>
+        By Tanish Sharma
+    </footer>
+
+
+
+</body>
+</html>
